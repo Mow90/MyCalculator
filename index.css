@@ -1,0 +1,97 @@
+/* ---------------------------------------- FONTS IMPORT ---------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Marck+Script&family=Noto+Serif:ital,wght@0,300;1,100;1,200&display=swap");
+
+/*  
+    font-family: 'EB Garamond', serif; 
+    font-family: 'Marck Script', cursive;
+    font-family: 'Noto Serif', serif;
+*/
+
+/* ---------------------------------------- END FONTS IMPORT ---------------------------------------- */
+
+/*------------------------------------- COLOR PALETTE ---------------------------------------------*/
+:root {
+  --color-blk: black;
+  --color-grey: rgb(80, 80, 80);
+  --first-color: #ddd5cc;
+  --second-color: #ffcda072;
+  --third-color: #fff4ebf1;
+  --fourth-color: #f0e2ca;
+  --fifth-color: #ffcca000;
+  --sixth-color: #fff2e7;
+  --seventh-color: #EDE4DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif; 
+    box-sizing: border-box;
+}
+
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: #fff4ebf1;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+
+.container {
+   background: #fff4eb4a; 
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.calculator {
+    background: #fff4ebf1;
+    box-shadow: 4px 5px #ddd5cc94;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(212, 211, 211, 0.145), 5px 5px 15px rgba(0, 0, 0, 0.068);
+    background: transparent;
+    font-size: 20px;
+    color: rgb(165, 76, 95);
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 46px;
+    padding-right: 5px;
+    box-shadow: none;
+}
+
+
+form input.equal {
+    width: 145px;
+}
+
+form input.operator {
+    color: #ed3fd3b7;
+    background-color: #ddd5ccb7;
+    font-weight: bold;
+}
